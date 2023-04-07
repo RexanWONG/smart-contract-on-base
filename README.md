@@ -12,6 +12,8 @@ npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
 
+
+
 # Loading environment variables
 The configuration in ```hardhat.config.ts``` uses dotenv to load the ```PRIVATE_KEY``` environment variable from a ```.env``` file to     ```process.env.PRIVATE_KEY```. You should use a similar method to avoid hardcoding your private keys within your source code.
 
@@ -21,6 +23,6 @@ To install dotenv, run:
 
 Once you have dotenv installed, you can create a .env file with the following content:
 
-PRIVATE_KEY="<YOUR_PRIVATE_KEY>"
+```PRIVATE_KEY="<YOUR_PRIVATE_KEY>"```
 
-Substituting <YOUR_PRIVATE_KEY> with the private key for your wallet.
+Substituting ```<YOUR_PRIVATE_KEY>``` with the private key for your wallet.
